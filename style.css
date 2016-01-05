@@ -5,12 +5,12 @@ html {
 }
 body {
     background: #eee;
-    font-family: 'Roboto', arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0 0 80px;
 }
 .header {
-    background: #2ca05a;
+    background-color: #2ca05a;
     border-bottom: 3px solid #307e4f;
 }
 
@@ -37,15 +37,19 @@ body {
 }
 
 .post {
+    background: white;
+    border: 1px solid #ccc;
     margin: 20px 30px;
     padding: 50px 30px;
+    -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, .3);
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, .3);
-    background: white;
 }
 
 .title {
     font-size: 25px;
-    padding-top: 20px
+    padding: 20px 0 10px 0;
+    border-bottom: 1px solid #ccc;
 }
 .title:first-child {
     padding-top: 0;
@@ -73,31 +77,27 @@ a:hover {
 }
 
 .footer {
+    background: #555;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
+    color: white;
+    font-size: 12px;
     position: absolute;
     bottom: 0;
     left: 0;
     height: 25px;
-    line-height: 25px;
     width: 100%;
+    line-height: 25px;
     padding-left: 30px;
-    color: #fcfcfc;
-    font-size: 12px;
-    background: #2d2d2d;
 }
 
-hr {
-    color: #fff;    
-}
-
-@media screen and (max-width: 1079px) {
-    .content {
-        width: 100%;
-    }
+span {
+    padding-left: 30px;
 }
 
 @media screen and (max-width: 540px) {
     .post {
-        margin: 10px 3px;
+        margin: 10px 5px;
     }
 }
