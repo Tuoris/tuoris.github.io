@@ -5,6 +5,7 @@ html {
 }
 body {
     background: #eee;
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0 0 80px;
@@ -89,15 +90,21 @@ a:hover {
     height: 25px;
     width: 100%;
     line-height: 25px;
-    padding-left: 30px;
+    text-align: center;
 }
 
 span {
-    padding-left: 30px;
+    padding-left: 40px;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
     .post {
         margin: 10px 5px;
+    }
+    ul {
+        padding-left: 0;
+    }
+    li {
+        list-style-type: none;
     }
 }
