@@ -1,0 +1,103 @@
+html {
+    position: relative;
+    min-height: 100%;
+    color: #555;
+}
+body {
+    background: #eee;
+    font-family: 'Roboto', arial, sans-serif;
+    padding: 0;
+    margin: 0 0 80px;
+}
+.header {
+    background: #2ca05a;
+    border-bottom: 3px solid #307e4f;
+}
+
+.logo {
+    top: 0;
+    float: left;
+    margin: 10px 0 0 40px;
+}
+
+.header-title {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 0;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0;
+    width: 100%;
+}
+.content {
+    margin: 30px auto;
+    max-width: 1080px;
+
+}
+
+.post {
+    margin: 20px 30px;
+    padding: 50px 30px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .3);
+    background: white;
+}
+
+.title {
+    font-size: 25px;
+    padding-top: 20px
+}
+.title:first-child {
+    padding-top: 0;
+}
+
+.tech {
+    margin: 10px 10px;
+    width: 90px;
+    height: 105px;
+}
+
+p {
+    line-height: 25px;
+}
+
+a, 
+a:active, 
+a:visited {
+    color: #0054ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 25px;
+    line-height: 25px;
+    width: 100%;
+    padding-left: 30px;
+    color: #fcfcfc;
+    font-size: 12px;
+    background: #2d2d2d;
+}
+
+hr {
+    color: #fff;    
+}
+
+@media screen and (max-width: 1079px) {
+    .content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .post {
+        margin: 10px 3px;
+    }
+}
