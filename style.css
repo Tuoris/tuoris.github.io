@@ -47,13 +47,20 @@ body {
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, .3);
 }
 
-.title {
+h2 {
+    font-weight: normal; 
     font-size: 25px;
-    padding: 20px 0 10px 0;
+    padding: 10px 0 10px 0;
     border-bottom: 1px solid #ccc;
 }
-.title:first-child {
-    padding-top: 0;
+h2:first-child {
+    margin-top: 0;
+}
+
+.tech-wrap {
+    width: 100%;
+    font-size: 0px;
+    text-align: center;
 }
 
 .tech {
@@ -75,6 +82,11 @@ a:visited {
 
 a:hover {
     text-decoration: underline;
+}
+
+
+li {
+    line-height: 150%;
 }
 
 .footer {
@@ -106,5 +118,10 @@ span {
     }
     li {
         list-style-type: none;
+    }
+    .tech {
+        margin: 5px 5px;
+        width: 70px;
+        height: 82px;
     }
 }
