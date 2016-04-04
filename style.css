@@ -31,17 +31,17 @@ body {
     top: 0;
     width: 100%;
 }
-.content {
-    margin: 30px auto;
-    max-width: 1080px;
 
+.content {
+    margin: 50px auto;
+    max-width: 1080px;
 }
 
 .post {
     background: white;
     border: 1px solid #ccc;
     margin: 20px 30px;
-    padding: 50px 30px;
+    padding: 30px 30px;
     -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, .3);
     -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, .3);
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, .3);
@@ -110,8 +110,12 @@ span {
 }
 
 @media screen and (max-width: 600px) {
+    .content {
+        margin: 20px auto;
+    }
     .post {
         margin: 10px 5px;
+        padding: 15px 20px;
     }
     ul {
         padding-left: 0;
