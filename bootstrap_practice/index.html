@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home page</title>
+    <title>Site page</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -12,7 +12,7 @@
     <div class="container page-header">
       <div class="row">
         <div class="col-sm-4 col-xs-12 col brand"><h1>SiteName</h1></div>
-        <div class="col-sm-3 col-xs-5 col text-right news">
+        <div class="col-sm-3 col text-right news">
           <ul class="list-inline">
             <li>
               <a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Newsletter</a>
@@ -22,16 +22,16 @@
             </li>
           </ul>
         </div>
-        <div class="col-sm-5 col-xs-7 col text-center search-form">
-          <div class="form-group">
-            <p class="form-control-static"><small>Search in archives</small></p>
-          </div>
-          <div class="form-group">
-            <input type="search" class="form-control input-sm" id="inputSearch" placeholder="search">
-          </div>
-          <div class="form-group">
-            <button type="submit" class="btn btn-default btn-sm">Search</button>
-          </div>
+        <div class="col-sm-5 col search-form">
+          <ul class="nav navbar-nav search-list">
+            <li>
+              <label><small>Search in archives</small></label>
+            </li>
+            <li>
+              <input type="search" class="input-sm">
+              <button type="submit" class="btn btn-default btn-sm">Search</button>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
