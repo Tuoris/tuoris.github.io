@@ -29,18 +29,27 @@
     position: relative;
 }
 
-.search-form {
-    padding-top: 18px;
-    padding-left: 10px;
+.search-form ul {
+    margin-top: -1px;
+    padding: 0;
 }
 
 .search-form .form-group {
     display: inline-block;
 }
 
-.search-form:before {
+.search-form label {
+    padding-right: 20px; 
+}
+
+.search-form label:before {
     content: "|";
     padding-right: 15px; 
+}
+
+.search-form input,
+.search-form button {
+    margin-top: -5px;
 }
 
 @media screen and (max-width: 767px) {
@@ -48,12 +57,19 @@
         text-align: center;
     }
     .news {
+        display: block;
         text-align: center;
         padding-left: 10px;
     }
+    .search-form,
+    .search-list {
+        display: inline-block;
+        padding: 0 15px;
+        margin: 0;
+    }
 
-    .search-form {
-        text-align: left;
+    .search-form label:before {
+        content: none;
     }
 }
 
@@ -67,7 +83,7 @@
     padding-top: 40px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 991px) {
     .page-header {
         height: auto;
     }
@@ -94,7 +110,7 @@
     color: white; 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 991px) {
     .dark-mark {
         position: relative;
         display: block;
@@ -165,6 +181,17 @@
     padding-right: 0;
 }
 
+
+@media screen and (max-width: 999px) {
+    .comments {
+        width: 100%;
+        border: none;
+    }
+    .comments .interview {
+        margin: 0 3px;
+    }
+}
+
 .interview {
     margin: 0 1px;
     padding-bottom: 20px;
@@ -220,6 +247,7 @@ div.info li {
     margin: 3px 0 0 0;
 }
 
+a.important:before,
 span.important:before,
 ul.important li:before {
     content: "\e010";
