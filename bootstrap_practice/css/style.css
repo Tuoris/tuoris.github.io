@@ -311,3 +311,27 @@ footer {
     padding: 20px 0; 
     border-top: 3px solid gray;
 }
+
+
+.github-home {
+    display: block;
+    position: fixed;
+    top: 30px;
+    min-width: 60px;
+    padding: 5px 5px 0;
+    background-color: black;
+    color: white;
+}
+
+
+.github-home .octicon,
+.github-back {
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    fill: white;
+}
+
+.octicon {
+    margin-bottom: -6px;
+}
