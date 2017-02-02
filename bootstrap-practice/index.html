@@ -4,42 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Site page</title>
+    <title>Global News</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <div class="container page-header">
-      <div class="row">
-        <div class="col-sm-4 col-xs-12 col brand"><h1>SiteName</h1></div>
-        <div class="col-sm-3 col text-right news">
-          <ul class="list-inline">
+    <header class="header container">
+      <div class="clearfix">
+        <div class="col-sm-4 col-xs-12 brand-section">
+          <h1>Global News</h1>
+        </div>
+        <div class="col-sm-3 col-xs-12 col text-right news">
+          <ul class="header-menu list-inline">
             <li>
-              <a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Newsletter</a>
+              <a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Newsletter</a>
             </li>
             <li>
-              <a href="#"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> RSS</a>
+              <a href="#"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>RSS</a>
             </li>
           </ul>
         </div>
-        <div class="col-sm-5 col search-form">
-          <ul class="nav navbar-nav search-list">
+        <div class="col-sm-5 col-xs-12 col search-form">
+          <ul class="nav navbar-nav list-inline search-list">
             <li>
-              <label><small>Search in archives</small></label>
+              <label id="search-label">Search in archives</label>
             </li>
-            <li>
-              <input type="search" class="input-sm">
+            <li class="search-group">
+              <input type="search" aria-labelledby="search-label" class="search-input input-sm">
               <button type="submit" class="btn btn-default btn-sm">Search</button>
             </li>
           </ul>
         </div>
       </div>
-    </div>
+    </header>
     <div class="container nav-container hidden-xs">
       <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a href="#">Accueil</a></li>
-        <li role="presentation"><a href="#">Accueilties</a></li>
-        <li role="presentation"><a href="#">En direct des regions</a></li>
+        <li role="presentation" class="active"><a href="#">Culture</a></li>
+        <li role="presentation"><a href="#">Sport</a></li>
+        <li role="presentation"><a href="#">Politics</a></li>
         <li role="presentation"><a href="#">Reperes financiers</a></li>
         <li role="presentation"><a href="#">Notre offre</a></li>
         <li role="presentation"><a href="#">De nous a vous</a></li>
@@ -48,14 +50,14 @@
     <div class="container main-content">
       <div class="row">
         <div class="col-md-6">
-          <span class="dark-mark">A la une</span>
+          <h2>Recent news</h2>
           <div class="post-container">
             <ul class="info list-inline">
               <li class="category">Surtitre</li>
               <li class="date">public le 12/12/07</li>
             </ul>
             <div class="post-content">
-              <h2>Lorem ipsum dolor.</h2>
+              <h3>Lorem ipsum dolor.</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus asperiores modi fugiat accusantium placeat dolores, ratione nulla quia, consectetur incidunt! Possimus vitae laboriosam quibusdam!</p>
             </div>
             <span class="author col-md-4">
@@ -64,9 +66,9 @@
             </span>
             <ul class="tags list-inline col-md-8">
               <li><span class="glyphicon glyphicon-tag"></span>Tags: </li>
-              <li class="tag">Lorem.</li>
-              <li class="tag">Nulla!</li>
-              <li class="tag">Cupiditate.</li>
+              <li><a href="#" class="tag">nature</a></li>
+              <li><a href="#" class="tag">science</a></li>
+              <li><a href="#" class="tag">biology</a></li>
             </ul>
           </div>
           <div class="post-container">
@@ -76,7 +78,7 @@
               <li class="date">public le 12/12/07</li>
             </ul>
             <div class="post-content">
-              <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+              <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus asperiores modi fugiat accusantium placeat dolores, ratione nulla quia, consectetur incidunt! Possimus vitae laboriosam quibusdam!</p>
             </div>
             <span class="author col-md-4">
@@ -85,9 +87,9 @@
             </span>
             <ul class="tags list-inline col-md-8">
               <li><span class="glyphicon glyphicon-tag"></span>Tags: </li>
-              <li class="tag">Lorem.</li>
-              <li class="tag">Nulla!</li>
-              <li class="tag">Cupiditate.</li>
+              <li><a href="#" class="tag">lorem</a></li>
+              <li><a href="#" class="tag">magnus</a></li>
+              <li><a href="#" class="tag">cupiditate</a></li>
             </ul>
           </div>
           <div class="post-container">
@@ -96,7 +98,7 @@
               <li class="date">public le 12/12/07</li>
             </ul>
             <div class="post-content">
-              <h2>Lorem ipsum dolor.</h2>
+              <h3>Lorem ipsum dolor.</h3>
               <img src="" alt="" class="post-image">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex quas neque ipsa, recusandae qui nesciunt facilis perferendis at possimus perspiciatis dolorum maiores voluptate!</p>
             </div>
@@ -106,14 +108,14 @@
             </span>
             <ul class="tags list-inline col-md-8">
               <li><span class="glyphicon glyphicon-tag"></span>Tags: </li>
-              <li class="tag">Lorem.</li>
-              <li class="tag">Ipsam!</li>
-              <li class="tag">Facere.</li>
+              <li><a href="#" class="tag">lorem</a></li>
+              <li><a href="#" class="tag">totem</a></li>
+              <li><a href="#" class="tag">facere</a></li>
             </ul>
           </div>
         </div>
         <div class="col-md-3 comments">
-          <span class="dark-mark">Interview</span>
+          <h2>Interview</h2>
           <div class="thumbnail interview">
             <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jofNR_WkoCE"></iframe>
@@ -121,14 +123,14 @@
             <div class="caption">
               <h3>Claire Dupond</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo optio vel iste provident veritatis autem.</p>
-              <div class="row">
-                <span class="date col-xs-6">public le 12/12/07</span>
-                <a href="#" class="important col-xs-6 text-right">continue</a>
+              <div class="clearfix">
+                <span class="date col-xs-6 no-gutter">public le 12/12/07</span>
+                <a href="#" class="important col-xs-6 no-gutter text-right">continue</a>
               </div>
             </div>
           </div>
           <div class="comment-section">
-            <span class="dark-mark">Agenda</span>
+            <h2>Comments</h2>
             <ul class="media-list">
               <li class="media">
                 <div class="media-left">
@@ -166,7 +168,7 @@
             </ul>
           </div>
           <div class="info">
-            <h2>Fill de info</h2>
+            <h3>Fill de info</h3>
             <ul class="info-list list-unstyled">
               <li>
                 <a href="">Locatis</a>
@@ -182,7 +184,7 @@
           </div>
         </div>
         <aside class="col-md-3 side">
-          <h2>Trier par Expertises</h2>
+          <h3>Trier par Expertises</h3>
           <ul class="list-unstyled list-bold important">
             <li><a href="#">Finances et fiscalite</a></li>
             <li><a href="#">Investisement et equipment</a></li>
@@ -267,8 +269,8 @@
     </div>
     <a href="https://github.com/Tuoris/tuoris.github.io" class="github-home">
       <div class="github-back"><span class="glyphicon glyphicon-chevron-left"></span>
-      </div><div class="github-back">
-        <svg aria-hidden="true" class="octicon" height="28" version="1.1" viewBox="0 0 16 16" width="28"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
-      </div></a>
-  </body>
+    </div><div class="github-back">
+  <svg aria-hidden="true" class="octicon" height="28" version="1.1" viewBox="0 0 16 16" width="28"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
+</div></a>
+</body>
 </html>
