@@ -27,10 +27,10 @@
         <div class="col-sm-5 col-xs-12 col search-form">
           <ul class="nav navbar-nav list-inline search-list">
             <li>
-              <label id="search-label">Search in archives</label>
+              <label for="searchID">Search in archives</label>
             </li>
             <li class="search-group">
-              <input type="search" aria-labelledby="search-label" class="search-input input-sm">
+              <input type="search" id="searchID" class="search-input input-sm">
               <button type="submit" class="btn btn-default btn-sm">Search</button>
             </li>
           </ul>
@@ -125,7 +125,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo optio vel iste provident veritatis autem.</p>
               <div class="clearfix">
                 <span class="date col-xs-6 no-gutter">public le 12/12/07</span>
-                <a href="#" class="important col-xs-6 no-gutter text-right">continue</a>
+                <a href="#" class="important col-xs-6 no-gutter text-right">read more</a>
               </div>
             </div>
           </div>
@@ -139,7 +139,7 @@
                   </a>
                 </div>
                 <div class="media-body">
-                  <h4 class="media-heading">Lorem ipsum.</h4>
+                  <h3 class="media-heading">Lorem ipsum.</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, cum.</p>
                 </div>
               </li>
@@ -150,7 +150,7 @@
                   </a>
                 </div>
                 <div class="media-body">
-                  <h4 class="media-heading">Lorem ipsum.</h4>
+                  <h3 class="media-heading">Lorem ipsum.</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis eveniet non recusandae optio neque cupiditate, tempora voluptas? Tempora, eos, distinctio.</p>
                 </div>
               </li>
@@ -161,7 +161,7 @@
                   </a>
                 </div>
                 <div class="media-body">
-                  <h4 class="media-heading">Lorem ipsum dolor.</h4>
+                  <h3 class="media-heading">Lorem ipsum dolor.</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, non.</p>
                 </div>
               </li>
@@ -172,12 +172,12 @@
             <ul class="info-list list-unstyled">
               <li>
                 <a href="">Locatis</a>
-                <h4>Lorem ipsum dolor.</h4>
+                <h3>Lorem ipsum dolor.</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati tenetur assumenda vero animi </p>
               </li>
               <li>
                 <a href="">Hospimedia</a>
-                <h4>Lorem ipsum dolor.</h4>
+                <h3>Lorem ipsum dolor.</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt rep ellat labore qui </p>
               </li>
             </ul>
@@ -198,16 +198,16 @@
           <div class="ad">
             <h3 class="ad-source">Webzine</h3>
             <h3 class="ad-theme">Ecodefi</h3>
-            <h4>Enqute</h4>
+            <h3>Enqute</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem animi sequi, nostrum, dolorum cupiditate ratione!</p>
-            <h4>Question de mobs</h4>
+            <h3>Question de mobs</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim sunt voluptatum dolorem adipisci neque est facilis, corporis earum exercitationem non.</p>
           </div>
           <div class="ad">
             <h3 class="ad-source">Webzine</h3>
             <h3 class="ad-theme">Ecodefi</h3>
             <img src="gray.png" alt="" class="ad-image">
-            <h5>Lorem ipsum dolor.</h5>
+            <h4>Lorem ipsum dolor.</h4>
           </div>
           <div class="ad">
             <strong>Lorem ipsum dolor sit amet, consectetur adipisicing.</strong>
@@ -217,7 +217,7 @@
       <footer class="row">
         <div class="col-md-2 col-xs-6">
           <ul class="important list-unstyled">
-            <h4>Lorem.</h4>
+            <h3>Lorem.</h3>
             <li>Lorem.</li>
             <li>Eveniet?</li>
             <li>Itaque.</li>
@@ -227,7 +227,7 @@
         </div>
         <div class="col-md-2 col-xs-6">
           <ul class="important list-unstyled">
-            <h4>Fugit.</h4>
+            <h3>Fugit.</h3>
             <li>Lorem.</li>
             <li>Cumque.</li>
             <li>Necessitatibus!</li>
@@ -237,7 +237,7 @@
         </div>
         <div class="col-md-2 col-xs-6">
           <ul class="important list-unstyled">
-            <h4>Nihil?</h4>
+            <h3>Nihil?</h3>
             <li>Lorem.</li>
             <li>Dolor.</li>
             <li>Cum?</li>
@@ -247,7 +247,7 @@
         </div>
         <div class="col-md-2 col-xs-6">
           <ul class="important list-unstyled">
-            <h4>Animi.</h4>
+            <h3>Animi.</h3>
             <li>Lorem.</li>
             <li>Atque.</li>
             <li>Atque.</li>
@@ -257,7 +257,7 @@
         </div>
         <div class="col-md-2 col-xs-6">
           <ul class="important list-unstyled">
-            <h4>Sint.</h4>
+            <h3>Sint.</h3>
             <li>Lorem.</li>
             <li>Ex.</li>
             <li>Repellendus.</li>
@@ -268,6 +268,7 @@
       </footer>
     </div>
     <a href="https://github.com/Tuoris/tuoris.github.io" class="github-home">
+      <span class="hidden">Back to Github</span>
       <div class="github-back"><span class="glyphicon glyphicon-chevron-left"></span>
     </div><div class="github-back">
   <svg aria-hidden="true" class="octicon" height="28" version="1.1" viewBox="0 0 16 16" width="28"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
