@@ -195,6 +195,10 @@ h2 {
     padding: 5px;
 }
 
+.post-container .list-inline {
+    margin-left: 0;
+}
+
 .post-content h3 {
     margin: 0 0 0.6em;
 }
@@ -219,6 +223,10 @@ h2 {
         width: 100%;
         border: none;
     }
+}
+
+.interview-header {
+  margin-left: 26px;
 }
 
 .interview {
