@@ -282,30 +282,30 @@ svg .svg4 {
 @-webkit-keyframes birth {
     0%,
     60% {
-        opacity: 0;
+        fill: rgba(255, 255, 255, 0);
     }
     100% {
-        opacity: 1;
+        fill: rgba(255, 255, 255, 1);
     }
 }
 
 @-moz-keyframes birth {
     0%,
     60% {
-        opacity: 0;
+        fill: rgba(255, 255, 255, 0);
     }
     100% {
-        opacity: 1;
+        fill: rgba(255, 255, 255, 1);
     }
 }
 
 @keyframes birth {
     0%,
     60% {
-        opacity: 0;
+        fill: rgba(255, 255, 255, 0);
     }
     100% {
-        opacity: 1;
+        fill: rgba(255, 255, 255, 1);
     }
 }
 
