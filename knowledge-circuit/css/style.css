@@ -64,43 +64,6 @@ body {
     }
 }
 
-.main-content {
-    position: relative;
-    background-color: #f2f2f2;
-    z-index: 10;
-    margin-top: 100vh;
-    padding-top: 60px;
-    padding-bottom: 20px;
-    -moz-box-shadow: 0 0 5px 0 #f2f2f2;
-         box-shadow: 0 0 5px 0 #f2f2f2;
-}
-
-.arrow-icon {
-    position: absolute;
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
-    width: 50px;
-    height: 50px;
-    background-color: #f2f2f2;
-    top: -25px;
-    left: -webkit-calc(50% - 25px);
-    left: -moz-calc(50% - 25px);
-    left: calc(50% - 25px);
-    -moz-border-radius: 50%;
-         border-radius: 50%;
-    margin: 0 auto;
-    padding-left: 7px;
-    -moz-box-shadow: 0 0 5px 0 #f2f2f2;
-         box-shadow: 0 0 5px 0 #f2f2f2;
-    z-index: 15;
-}
-
-.arrow-icon img {
-    width: 36px;
-    height: 36px;
-    z-index: 15;
-}
-
 .tech,
 .info {
     width: 900px;
@@ -115,65 +78,9 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-    .tech,
     .info {
         width: 90%;
     }
-}
-
-.tech h2 {
-    font-size: 1.6em;
-    text-transform: uppercase;
-}
-
-.tech h2,
-.tech p:nth-child(2) {
-    display: inline;
-}
-
-.tech p {
-    margin: .5em 0;
-    line-height: 1.3em;
-}
-
-.python h2 {
-    color: #3377ff;
-}
-
-.flask h2 {
-    color: #000;
-}
-
-.django h2 {
-    color: #44B78B;
-}
-
-.c-lang h2 {
-    color: #00829f;
-}
-
-.c-plus-plus h2 {
-    color: #004383;
-}
-
-.front-end h2 {
-    color: #ff3386;
-}
-
-.html h2 {
-    color: #f0652b;
-}
-
-.css h2 {
-    color: #2162b0;
-}
-
-.sass h2 {
-    color: #cf649a;
-}
-
-.javascript h2 {
-    color: #e4a511;
 }
 
 footer {
